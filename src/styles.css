@@ -1,0 +1,42 @@
+body {
+  background: radial-gradient(
+    ellipse farthest-corner at 45px 45px,
+    #00ffff 0%,
+    #4ed8a0 50%,
+    #93d84e 95%
+  );
+}
+#root {
+  color: #333;
+  text-align: center;
+  background: #fff;
+  width: 300px;
+  margin: 200px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0px #333;
+}
+
+.btn {
+  background-color: #4ed8a0 !important;
+  color: #fff !important;
+  border: 1px solid #00ffff !important;
+  margin: 0 2px;
+  border-radius: 15px;
+}
+
+#display {
+  margin-top: 20px;
+  /* max-width: 200px; */
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, red, purple);
+  padding: 3px;
+  color: #fff;
+}
+
+/* #text {
+  background: #fff;
+  color: black;
+  padding: 2rem;
+  font-size: 20px;
+} */
