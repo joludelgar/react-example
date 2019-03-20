@@ -12,6 +12,15 @@ function Button(props) {
   );
 }
 
+function Reset(props) {
+  const resetClick = () => props.onClickFunction();
+  return (
+    <button class="btn" onClick={resetClick}>
+      Borrar
+    </button>
+  );
+}
+
 function Display(props) {
   return (
     <div id="display">
@@ -24,6 +33,7 @@ function App() {
   const [counter, setCounter] = useState(0);
   const incrementCounter = incrementValue =>
     setCounter(counter + incrementValue);
+  const resetCounter = () => setCounter(0);
   return (
     <div>
       <Button onClickFunction={incrementCounter} increment={1} />
@@ -31,6 +41,7 @@ function App() {
       <Button onClickFunction={incrementCounter} increment={10} />
       <Button onClickFunction={incrementCounter} increment={100} />
       <Display message={counter} />
+      <Reset onClickFunction={resetCounter} />
     </div>
   );
 }
